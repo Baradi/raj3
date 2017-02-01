@@ -7,11 +7,12 @@
 	<packaging>war</packaging>
 	<name>Simple crud app</name>
 	<description>CRUD application demo</description>
-	<repository>
-+      		<id>my-repo1</id>
-+      		<name>Crudapp</name>
-+      		<url>http://172.16.103.144:8081/nexus/#view-repositories;releases~browsestorage</url>
-	</repository>
+	<distributionManagement>
+ 	 <repository>
+   	 <id>releases</id>
+    	<url>http://172.16.103.144:8081/nexus/content/repositories/releases</url>
+  	</repository>
+	</distributionManagement>
 	<dependencies>
 	<dependency>
 		<groupId>javax.servlet</groupId>
