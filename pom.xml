@@ -56,15 +56,16 @@
 		</plugins>
 	</build>
 	<distributionManagement>
- 	<repositories>
  	<repository>
    	 	<id>releases</id>
     		<url>http://172.16.103.144:8081/nexus/content/repositories/releases</url>
   	</repository>
-	<repository>
+	<distributionManagement>
+ 	<snapshotRepository>
     		<id>snapshots</id>
     		<url>http://172.16.103.144:8081/nexus/content/repositories/snapshots</url>
-   	</repository>
-	</repositories>
+  	</snapshotRepository>
+</distributionManagement>
+	
 </distributionManagement>
 </project>
