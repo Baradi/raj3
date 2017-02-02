@@ -7,12 +7,7 @@
 	<packaging>war</packaging>
 	<name>Simple crud app</name>
 	<description>CRUD application demo</description>
-	<repositories>
- 	<repository>
-   	 	<id>releases</id>
-    		<url>http://172.16.103.144:8081/nexus/content/repositories/releases</url>
-  	</repository>
-	</repositories>
+	
 	<dependencies>
 	<dependency>
 		<groupId>javax.servlet</groupId>
@@ -61,13 +56,15 @@
 		</plugins>
 	</build>
 	<distributionManagement>
-  <repository>
-    <id>releases</id>
-    <url>http://172.16.103.144:8081/nexus/content/repositories/releases</url>
-   </repository>
-   <repository>
-    <id>snapshots</id>
-    <url>http://172.16.103.144:8081/nexus/content/repositories/snapshots</url>
-   </repository>		
+ 	<repositories>
+ 	<repository>
+   	 	<id>releases</id>
+    		<url>http://172.16.103.144:8081/nexus/content/repositories/releases</url>
+  	</repository>
+	<repository>
+    		<id>snapshots</id>
+    		<url>http://172.16.103.144:8081/nexus/content/repositories/snapshots</url>
+   	</repository>
+	</repositories>
 </distributionManagement>
 </project>
