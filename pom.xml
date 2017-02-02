@@ -64,8 +64,6 @@
   <repository>
     <id>releases</id>
     <url>http://172.16.103.144:8081/nexus/content/repositories/releases</url>
-    <username>admin</username>
-    <password>admin123</password>
-  </repository>
+   </repository>
 </distributionManagement>
 </project>
